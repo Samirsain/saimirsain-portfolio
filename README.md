@@ -1,18 +1,8 @@
-# [chanhdai.com](https://chanhdai.com)
+# Samirsain Portfolio
 
-A minimal, pixel-perfect dev portfolio, component registry, and blog to showcase my work as a Design Engineer.
+A minimal, pixel-perfect developer portfolio and blog to showcase my work as a Full Stack Developer.
 
-Check out the live site: [chanhdai.com](https://chanhdai.com)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?t=1763226447">
-  <source media="(prefers-color-scheme: light)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-light.webp?t=1763226447">
-  <img src="https://assets.chanhdai.com/images/screenshot-desktop-light.webp?t=1763226447" alt="Screenshot">
-</picture>
-
-## GitAds Sponsored
-
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=ncdai/chanhdai.com@github)](https://gitads.dev/v1/ad-track?source=ncdai/chanhdai.com@github)
+Check out the live site: [sam4you.vercel.app](https://sam4you.vercel.app)
 
 ## Overview
 
@@ -27,11 +17,11 @@ Check out the live site: [chanhdai.com](https://chanhdai.com)
 - Clean & modern design
 - Light/Dark themes
 - vCard integration
-- SEO optimized ([JSON-LD schema](https://json-ld.org), sitemap, robots)
-- AI-ready with [/llms.txt](https://llmstxt.org)
+- SEO optimized (JSON-LD schema, sitemap, robots)
+- AI-ready with /llms.txt
 - Spam-protected email
 - Installable as PWA
-- Analytics with [PostHog](https://posthog.com) & consent management via [c15t](https://c15t.com)
+- Analytics with PostHog & consent management via c15t
 
 ### Blog
 
@@ -41,45 +31,22 @@ Check out the live site: [chanhdai.com](https://chanhdai.com)
 - Dynamic OG images for rich link previews
 - RSS feed for easy content distribution
 
-### Registry
-
-Easily build and distribute reusable components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
-
-Each entry is well-documented and includes:
-
-- Live preview & code snippets
-- Beautiful, readable code blocks
-- One-click command blocks (pnpm, npm, yarn, bun)
-
-### Analytics
-
-User behavior tracking with [PostHog](https://posthog.com) to understand how visitors interact with the site:
-
-- **Copy events** - Track code & command copies
-- **Engagement** - Monitor name pronunciation plays, command menu usage
-- **Search behavior** - Analyze search queries (debounced)
-- **User actions** - Navigation, theme changes, content interactions
-
-Built with privacy in mind:
-
-- Consent management via [c15t](https://c15t.com)
-- Cookieless mode until consent
-- Production-only tracking
-- Type-safe event schema with Zod
-
 ## Development
 
-Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Build for production
+pnpm build
+```
 
 ## License
 
-Licensed under the [MIT license](./LICENSE).
-
-You're free to use my code! Just make sure to <ins>remove all my personal information</ins> before publishing your website. It's awesome to see my code being useful to someone!
-
-## Star History
-
-[![Star History](https://starchart.cc/ncdai/chanhdai.com.svg?variant=adaptive&line=%23d37f2c)](https://starchart.cc/ncdai/chanhdai.com)
+Licensed under the MIT license.
 
 ## Acknowledgments
 
@@ -97,4 +64,6 @@ You're free to use my code! Just make sure to <ins>remove all my personal inform
 - [c15t](https://c15t.com)
 - And many other open-source libraries used in `package.json`
 
-<!-- GitAds-Verify: QICCAB4PFWV9MHUGPGPN5B2I8SAXLAOK -->
+---
+
+**Built with ❤️ by [Samirsain](https://github.com/Samirsain)**
