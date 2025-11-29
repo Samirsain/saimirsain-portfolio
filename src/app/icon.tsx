@@ -14,20 +14,27 @@ export default function Icon() {
             // ImageResponse JSX element
             <div
                 style={{
-                    fontSize: 20,
                     background: "black",
                     width: "100%",
                     height: "100%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "white",
                     borderRadius: "6px", // Rounded corners
-                    fontWeight: 700,
-                    fontFamily: "system-ui, sans-serif",
                 }}
             >
-                SS
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 256 128"
+                    fill="none"
+                >
+                    <path
+                        fill="white"
+                        d="M96 128H32V96h64v32ZM224 32h-64v64h64v32h-96V0h96v32ZM32 96H0V32h32v64ZM256 96h-32V32h32v64ZM96 32H32V0h64v32Z"
+                    />
+                </svg>
             </div>
         ),
         // ImageResponse options
@@ -36,3 +43,4 @@ export default function Icon() {
         }
     );
 }
+
