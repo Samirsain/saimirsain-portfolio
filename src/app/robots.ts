@@ -3,12 +3,14 @@ import type { MetadataRoute } from "next";
 import { SITE_INFO } from "@/config/site";
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = SITE_INFO.url || "https://samirsain.com";
   return {
     rules: [
       {
         userAgent: "*",
+        allow: "/",
       },
     ],
-    sitemap: `${SITE_INFO.url}/sitemap.xml`,
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

@@ -42,11 +42,16 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   title: {
-    template: `%s – ${SITE_INFO.name}`,
-    default: "Samir Sain – Full Stack Developer & Digital Solutions Expert",
+    template: `%s`,
+    default: "Samir Sain - Full Stack Developer",
   },
-  description: "I’m Samir Sain, a passionate Full Stack Developer with 5 years of experience building modern digital solutions. Specializing in Next.js, React, and scalable web applications.",
-  keywords: SITE_INFO.keywords,
+  description: "Official website of Samir Sain - Full Stack Developer.",
+  keywords: [
+    "Samir Sain",
+    "Samir Sain Developer",
+    "Samir Sain Portfolio",
+    "Samir Sain Official Website",
+  ],
   authors: [
     {
       name: "Samir Sain",
@@ -55,19 +60,17 @@ export const metadata: Metadata = {
   ],
   creator: "Samir Sain",
   openGraph: {
-    siteName: SITE_INFO.name,
+    siteName: "Samir Sain",
     url: "/",
-    type: "profile",
-    firstName: USER.firstName,
-    lastName: USER.lastName,
-    username: USER.username,
-    gender: USER.gender,
+    type: "website",
+    title: "Samir Sain - Full Stack Developer",
+    description: "Official website of Samir Sain, Full Stack Developer.",
     images: [
       {
         url: SITE_INFO.ogImage,
         width: 1200,
         height: 630,
-        alt: SITE_INFO.name,
+        alt: "Samir Sain",
       },
     ],
   },
@@ -112,26 +115,20 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              getWebSiteJsonLd(),
-              {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                name: "Samir Sain",
-                url: "https://samirsain.com",
-                jobTitle: "Full Stack Developer",
-                image: "https://samirsain.com/og-image.png",
-                sameAs: [
-                  "https://github.com/Samirsain",
-                  "https://x.com/codexmir",
-                  "https://www.linkedin.com/in/samirsain"
-                ],
-                worksFor: {
-                  "@type": "Organization",
-                  name: "Sam4You"
-                }
-              }
-            ]).replace(/</g, "\\u003c"),
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Samir Sain",
+              "url": "https://samirsain.com",
+              "logo": "https://samirsain.com/images/samirsain-avatar.png",
+              "description": "Official website of Samir Sain - Full Stack Developer.",
+              "sameAs": [
+                "https://instagram.com/codexmir",
+                "https://facebook.com/samirsain",
+                "https://linkedin.com/in/samirsain",
+                "https://github.com/Samirsain"
+              ]
+            }).replace(/</g, "\\u003c"),
           }}
         />
       </head>

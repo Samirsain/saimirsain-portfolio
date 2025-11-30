@@ -35,7 +35,7 @@ My goal is simple:
 
 With a strong mindset, consistent learning, and love for coding, I’m committed to creating meaningful digital experiences that leave an impact.
 `,
-  avatar: "https://github.com/samirsain.png",
+  avatar: "/images/samirsain-avatar.png",
   ogImage:
     "https://samirsain.com/og-image.png",
   namePronunciationUrl: "",
