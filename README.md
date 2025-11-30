@@ -2,7 +2,7 @@
 
 A minimal, pixel-perfect developer portfolio and blog to showcase my work as a Full Stack Developer.
 
-Check out the live site: [sam4you.vercel.app](https://sam4you.vercel.app)
+Check out the live site: [samirsain.com](https://samirsain.com)
 
 ## Overview
 
