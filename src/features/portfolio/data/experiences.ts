@@ -4,7 +4,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "sam4you",
     companyName: "Sam4You Agency",
-    companyLogo: "https://sam4you.vercel.app/favicon.ico",
+    companyLogo: "https://www.samirsain.com/favicon.ico",
     positions: [
       {
         id: "founder",

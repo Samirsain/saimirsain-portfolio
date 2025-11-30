@@ -4,7 +4,7 @@ import { SITE_INFO } from "@/config/site";
 import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = SITE_INFO.url || "https://samirsain.com";
+  const baseUrl = SITE_INFO.url || "https://www.samirsain.com";
 
   // Blog posts URLs
   const posts = getAllPosts().map((post) => ({
