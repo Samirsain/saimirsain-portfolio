@@ -43,17 +43,17 @@ export const metadata: Metadata = {
   },
   title: {
     template: `%s – ${SITE_INFO.name}`,
-    default: `${USER.displayName} – ${USER.jobTitle}`,
+    default: "Samir Sain – Full Stack Developer & Digital Solutions Expert",
   },
-  description: SITE_INFO.description,
+  description: "I’m Samir Sain, a passionate Full Stack Developer with 5 years of experience building modern digital solutions. Specializing in Next.js, React, and scalable web applications.",
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "Samirsain",
+      name: "Samir Sain",
       url: SITE_INFO.url,
     },
   ],
-  creator: "Samirsain",
+  creator: "Samir Sain",
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
@@ -112,7 +112,26 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getWebSiteJsonLd()).replace(/</g, "\\u003c"),
+            __html: JSON.stringify([
+              getWebSiteJsonLd(),
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Samir Sain",
+                url: "https://samirsain.com",
+                jobTitle: "Full Stack Developer",
+                image: "https://samirsain.com/og-image.png",
+                sameAs: [
+                  "https://github.com/Samirsain",
+                  "https://x.com/codexmir",
+                  "https://www.linkedin.com/in/samirsain"
+                ],
+                worksFor: {
+                  "@type": "Organization",
+                  name: "Sam4You"
+                }
+              }
+            ]).replace(/</g, "\\u003c"),
           }}
         />
       </head>
