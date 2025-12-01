@@ -119,8 +119,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Samir Sain",
-              "url": "https://samirsain.com",
-              "logo": "https://samirsain.com/images/samirsain-avatar.png",
+              "url": SITE_INFO.url,
+              "logo": `${SITE_INFO.url}/images/samirsain-avatar.png`,
               "description": "Official website of Samir Sain - Full Stack Developer.",
               "sameAs": [
                 "https://instagram.com/codexmir",

@@ -43,9 +43,9 @@ export const Index: Record<string, any> = {`;
       type: "${file.type}",
     }`;
     })}],${item.type === "registry:example"
-        ? `
+      ? `
     component: React.lazy(() => import("${componentPath}")),`
-        : ""
+      : ""
       }
   },`;
   }
@@ -58,7 +58,7 @@ export const Index: Record<string, any> = {`;
     {
       $schema: "https://ui.shadcn.com/schema/registry.json",
       name: "ncdai",
-      homepage: "https://sam4you.vercel.app/components",
+      homepage: "https://www.samirsain.com/components",
       items: registry.items
         .filter((item) => item.type !== "registry:example")
         .map((item) => {
