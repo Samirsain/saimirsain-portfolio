@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import type { MetadataRoute } from "next";
 
 import { SITE_INFO } from "@/config/site";
