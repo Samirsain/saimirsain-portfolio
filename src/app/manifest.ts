@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
+import { SITE_INFO } from "@/config/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -9,28 +9,59 @@ export default function manifest(): MetadataRoute.Manifest {
     description: SITE_INFO.description,
     icons: [
       {
-        src: "/icon.png",
+        src: "https://assets.chanhdai.com/images/icon-vector.svg",
+        type: "image/svg+xml",
+        sizes: "any",
+        purpose: "any",
+      },
+      {
+        src: "https://assets.chanhdai.com/images/icon-192x192.png",
+        type: "image/png",
+        sizes: "192x192",
+        purpose: "any",
+      },
+      {
+        src: "https://assets.chanhdai.com/images/icon-512x512.png",
         type: "image/png",
         sizes: "512x512",
         purpose: "any",
       },
       {
-        src: "/icon.png",
+        src: "https://assets.chanhdai.com/images/maskable-icon.png",
         type: "image/png",
         sizes: "512x512",
         purpose: "maskable",
-      },
-      {
-        src: "/apple-touch-icon.png",
-        type: "image/png",
-        sizes: "180x180",
       },
     ],
     id: "/?utm_source=pwa",
     start_url: "/?utm_source=pwa",
     display: "standalone",
     scope: "/",
-    theme_color: META_THEME_COLORS.light,
-    background_color: META_THEME_COLORS.light,
+    screenshots: [
+      {
+        src: "https://assets.chanhdai.com/images/screenshot-mobile-dark.webp",
+        type: "image/webp",
+        sizes: "440x956",
+        form_factor: "narrow",
+      },
+      {
+        src: "https://assets.chanhdai.com/images/screenshot-mobile-light.webp",
+        type: "image/webp",
+        sizes: "440x956",
+        form_factor: "narrow",
+      },
+      {
+        src: "https://assets.chanhdai.com/images/screenshot-desktop-dark.webp",
+        type: "image/webp",
+        sizes: "1920x1080",
+        form_factor: "wide",
+      },
+      {
+        src: "https://assets.chanhdai.com/images/screenshot-desktop-light.webp",
+        type: "image/webp",
+        sizes: "1920x1080",
+        form_factor: "wide",
+      },
+    ],
   };
 }

@@ -38,13 +38,13 @@ export function JobItem({ title, company, website }: JobItemProps) {
       <IntroItemIcon>{getJobIcon(title)}</IntroItemIcon>
 
       <IntroItemContent>
+        {title} @
         <IntroItemLink
+          className="ml-0.5 font-medium"
           href={addQueryParams(website, UTM_PARAMS)}
-          aria-label={`${title} at ${company}`}
-          className="hover:no-underline"
+          aria-label={`${company} website`}
         >
-          {title} @
-          <span className="ml-0.5 font-medium hover:underline">{company}</span>
+          {company}
         </IntroItemLink>
       </IntroItemContent>
     </IntroItem>

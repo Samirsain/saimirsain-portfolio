@@ -11,7 +11,7 @@ export function ProfileHeader() {
         <div className="mx-0.5 my-[3px]">
           <img
             className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
-            alt="Samir Sain Full Stack Developer"
+            alt={`${USER.displayName}'s avatar`}
             src={USER.avatar}
             fetchPriority="high"
           />
@@ -74,7 +74,7 @@ export function ProfileHeader() {
         <div className="border-t border-edge">
           <div className="flex items-center gap-2 pl-4">
             <h1 className="-translate-y-px text-3xl font-semibold">
-              Samir Sain
+              {USER.displayName}
             </h1>
 
             <VerifiedIcon

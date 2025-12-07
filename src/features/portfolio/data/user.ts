@@ -3,7 +3,7 @@ import type { User } from "@/features/portfolio/types/user";
 export const USER: User = {
   firstName: "Samir",
   lastName: "Sain",
-  displayName: "Samir Sain",
+  displayName: "Samirsain",
   username: "samirsain",
   gender: "male",
   pronouns: "he/him",
@@ -13,10 +13,10 @@ export const USER: User = {
     "Full Stack Developer",
     "Digital Solutions Expert",
   ],
-  address: "Gurgaon, India",
+  address: "India",
   phoneNumber: "KzkxOTM1MjQxMDY2Nw==", // +919352410667
   email: "ZGV2eG1pckBnbWFpbC5jb20=", // base64 encoded (devxmir@gmail.com)
-  website: "https://samirsain.com",
+  website: "https://sam4you.vercel.app",
   jobTitle: "Full Stack Developer",
   jobs: [
     {
@@ -35,9 +35,9 @@ My goal is simple:
 
 With a strong mindset, consistent learning, and love for coding, I’m committed to creating meaningful digital experiences that leave an impact.
 `,
-  avatar: "/images/samirsain-avatar.png",
+  avatar: "https://github.com/samirsain.png",
   ogImage:
-    "https://samirsain.com/og-image.png",
+    "https://sam4you.vercel.app/og-image.png",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: [

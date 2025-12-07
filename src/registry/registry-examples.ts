@@ -4,7 +4,7 @@ export const examples: Registry["items"] = [
   {
     name: "apple-hello-effect-vi-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/apple-hello-effect"],
+    registryDependencies: ["@ncdai/apple-hello-effect"],
     files: [
       {
         path: "examples/apple-hello-effect-vi-demo.tsx",
@@ -15,7 +15,7 @@ export const examples: Registry["items"] = [
   {
     name: "apple-hello-effect-en-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/apple-hello-effect"],
+    registryDependencies: ["@ncdai/apple-hello-effect"],
     files: [
       {
         path: "examples/apple-hello-effect-en-demo.tsx",
@@ -26,7 +26,7 @@ export const examples: Registry["items"] = [
   {
     name: "theme-switcher-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/theme-switcher"],
+    registryDependencies: ["@ncdai/theme-switcher"],
     files: [
       {
         path: "examples/theme-switcher-demo.tsx",
@@ -37,7 +37,7 @@ export const examples: Registry["items"] = [
   {
     name: "wheel-picker-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/wheel-picker"],
+    registryDependencies: ["@ncdai/wheel-picker"],
     files: [
       {
         path: "examples/wheel-picker-demo.tsx",
@@ -48,7 +48,7 @@ export const examples: Registry["items"] = [
   {
     name: "wheel-picker-form-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/wheel-picker", "form"],
+    registryDependencies: ["@ncdai/wheel-picker", "form"],
     files: [
       {
         path: "examples/wheel-picker-form-demo.tsx",
@@ -59,7 +59,7 @@ export const examples: Registry["items"] = [
   {
     name: "work-experience-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/work-experience"],
+    registryDependencies: ["@ncdai/work-experience"],
     files: [
       {
         path: "examples/work-experience-demo.tsx",
@@ -70,7 +70,7 @@ export const examples: Registry["items"] = [
   {
     name: "shimmering-text-demo-01",
     type: "registry:example",
-    registryDependencies: ["@samirsain/shimmering-text"],
+    registryDependencies: ["@ncdai/shimmering-text"],
     files: [
       {
         path: "examples/shimmering-text-demo-01.tsx",
@@ -81,7 +81,7 @@ export const examples: Registry["items"] = [
   {
     name: "shimmering-text-demo-02",
     type: "registry:example",
-    registryDependencies: ["@samirsain/shimmering-text"],
+    registryDependencies: ["@ncdai/shimmering-text"],
     files: [
       {
         path: "examples/shimmering-text-demo-02.tsx",
@@ -92,7 +92,7 @@ export const examples: Registry["items"] = [
   {
     name: "slide-to-unlock-demo-01",
     type: "registry:example",
-    registryDependencies: ["@samirsain/slide-to-unlock", "@samirsain/use-sound"],
+    registryDependencies: ["@ncdai/slide-to-unlock", "@ncdai/use-sound"],
     files: [
       {
         path: "examples/slide-to-unlock-demo-01.tsx",
@@ -103,7 +103,7 @@ export const examples: Registry["items"] = [
   {
     name: "slide-to-unlock-demo-02",
     type: "registry:example",
-    registryDependencies: ["@samirsain/slide-to-unlock"],
+    registryDependencies: ["@ncdai/slide-to-unlock"],
     files: [
       {
         path: "examples/slide-to-unlock-demo-02.tsx",
@@ -114,7 +114,7 @@ export const examples: Registry["items"] = [
   {
     name: "slide-to-unlock-demo-03",
     type: "registry:example",
-    registryDependencies: ["@samirsain/slide-to-unlock"],
+    registryDependencies: ["@ncdai/slide-to-unlock"],
     files: [
       {
         path: "examples/slide-to-unlock-demo-03.tsx",
@@ -125,7 +125,7 @@ export const examples: Registry["items"] = [
   {
     name: "testimonials-marquee-demo-01",
     type: "registry:example",
-    registryDependencies: ["@samirsain/testimonials-marquee"],
+    registryDependencies: ["@ncdai/testimonials-marquee"],
     files: [
       {
         path: "examples/testimonials-marquee-demo-01.tsx",
@@ -136,7 +136,7 @@ export const examples: Registry["items"] = [
   {
     name: "testimonials-marquee-demo-02",
     type: "registry:example",
-    registryDependencies: ["@samirsain/testimonials-marquee"],
+    registryDependencies: ["@ncdai/testimonials-marquee"],
     files: [
       {
         path: "examples/testimonials-marquee-demo-02.tsx",
@@ -147,7 +147,7 @@ export const examples: Registry["items"] = [
   {
     name: "github-stars-demo",
     type: "registry:example",
-    registryDependencies: ["@samirsain/github-stars"],
+    registryDependencies: ["@ncdai/github-stars"],
     files: [
       {
         path: "examples/github-stars-demo.tsx",

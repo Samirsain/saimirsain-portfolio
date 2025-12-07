@@ -3,12 +3,23 @@ import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
+import type { WebSite, WithContext } from "schema-dts";
+
 
 import { Providers } from "@/components/providers";
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
+import { USER } from "@/features/portfolio/data/user";
 import { fontMono, fontSans } from "@/lib/fonts";
 
-
+function getWebSiteJsonLd(): WithContext<WebSite> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_INFO.name,
+    url: SITE_INFO.url,
+    alternateName: [USER.username],
+  };
+}
 
 // Thanks @shadcn-ui, @tailwindcss
 const darkModeScript = String.raw`
@@ -31,46 +42,32 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   title: {
-    template: `%s`,
-    default: "Samir Sain - Full Stack Developer",
+    template: `%s – ${SITE_INFO.name}`,
+    default: `${USER.displayName} – ${USER.jobTitle}`,
   },
-  description: "Official Portfolio of Samir Sain",
-  keywords: [
-    "Samir Sain",
-    "Samir Sain Developer",
-    "Samir Sain Portfolio",
-    "Samir Sain Official Website",
-  ],
+  description: SITE_INFO.description,
+  keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "Samir Sain",
+      name: "Samirsain",
       url: SITE_INFO.url,
     },
   ],
-  creator: "Samir Sain",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", sizes: "512x512", type: "image/png" },
-    ],
-    shortcut: "/favicon.ico",
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-  },
-  manifest: "/site.webmanifest",
+  creator: "Samirsain",
   openGraph: {
-    siteName: "Samir Sain",
+    siteName: SITE_INFO.name,
     url: "/",
-    type: "website",
-    title: "Samir Sain - Full Stack Developer",
-    description: "Official website of Samir Sain, Full Stack Developer.",
+    type: "profile",
+    firstName: USER.firstName,
+    lastName: USER.lastName,
+    username: USER.username,
+    gender: USER.gender,
     images: [
       {
         url: SITE_INFO.ogImage,
         width: 1200,
         height: 630,
-        alt: "Samir Sain",
+        alt: SITE_INFO.name,
       },
     ],
   },
@@ -115,20 +112,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Samir Sain",
-              "url": SITE_INFO.url,
-              "logo": `${SITE_INFO.url}/images/samirsain-avatar.png`,
-              "description": "Official website of Samir Sain - Full Stack Developer.",
-              "sameAs": [
-                "https://instagram.com/codexmir",
-                "https://facebook.com/samirsain",
-                "https://linkedin.com/in/samirsain",
-                "https://github.com/Samirsain"
-              ]
-            }).replace(/</g, "\\u003c"),
+            __html: JSON.stringify(getWebSiteJsonLd()).replace(/</g, "\\u003c"),
           }}
         />
       </head>

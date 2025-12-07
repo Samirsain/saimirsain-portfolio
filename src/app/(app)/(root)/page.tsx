@@ -5,7 +5,6 @@ import { Blog } from "@/features/portfolio/components/blog";
 import { Experiences } from "@/features/portfolio/components/experiences";
 import { GitHubContributions } from "@/features/portfolio/components/github-contributions";
 import { Overview } from "@/features/portfolio/components/overview";
-import { PortfolioSoundEffect } from "@/features/portfolio/components/portfolio-sound-effect";
 import { ProfileCover } from "@/features/portfolio/components/profile-cover";
 import { ProfileHeader } from "@/features/portfolio/components/profile-header";
 import { Projects } from "@/features/portfolio/components/projects";
@@ -23,8 +22,6 @@ export default function Page() {
           __html: JSON.stringify(getPageJsonLd()).replace(/</g, "\\u003c"),
         }}
       />
-
-      <PortfolioSoundEffect />
 
       <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
         <ProfileCover />

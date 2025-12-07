@@ -1,33 +1,37 @@
 # Samirsain Portfolio
 
-A modern, minimal portfolio website showcasing my work as a Full Stack Developer.
+A minimal, pixel-perfect developer portfolio and blog to showcase my work as a Full Stack Developer.
 
-🌐 **Live Site**: [samirsain.com](https://samirsain.com)
+Check out the live site: [samirsain.com](https://samirsain.com)
 
-## About
+## Overview
 
-I'm **Samir Sain**, a passionate self-taught coder with **5 years of hands-on experience** in building modern digital solutions. This portfolio showcases my projects, skills, and blog posts about web development.
+### Stack
 
-## Tech Stack
+- Next.js 16
+- Tailwind CSS v4
+- shadcn/ui
 
-- **Framework**: Next.js 16 (React)
-- **Styling**: Tailwind CSS v4
-- **UI Components**: shadcn/ui, Radix UI
-- **Animations**: Motion
-- **Content**: MDX for blog posts
-- **Analytics**: PostHog with consent management
+### Featured
 
-## Features
+- Clean & modern design
+- Light/Dark themes
+- vCard integration
+- SEO optimized (JSON-LD schema, sitemap, robots)
+- AI-ready with /llms.txt
+- Spam-protected email
+- Installable as PWA
+- Analytics with PostHog & consent management via c15t
 
-- 🎨 Clean & modern design with light/dark themes
-- 📱 Fully responsive and mobile-friendly
-- 📝 Blog with MDX support and syntax highlighting
-- 🔍 SEO optimized (sitemap, robots.txt, JSON-LD schema)
-- 📧 Spam-protected contact information
-- 📱 Installable as PWA
-- 🤖 AI-ready with /llms.txt
+### Blog
 
-## Getting Started
+- Supports MDX & Markdown
+- Raw `.mdx` endpoints for AI readability
+- Syntax highlighting for clear code presentation
+- Dynamic OG images for rich link previews
+- RSS feed for easy content distribution
+
+## Development
 
 ```bash
 # Install dependencies
@@ -38,36 +42,28 @@ pnpm dev
 
 # Build for production
 pnpm build
-
-# Start production server
-pnpm start
-```
-
-The development server runs on [http://localhost:1408](http://localhost:1408)
-
-## Project Structure
-
-```
-├── src/
-│   ├── app/              # Next.js app directory
-│   ├── components/       # React components
-│   ├── features/         # Feature-specific code
-│   ├── lib/             # Utility functions
-│   └── styles/          # Global styles
-├── public/              # Static assets
-└── content/             # Blog posts and content
 ```
 
 ## License
 
-MIT License - feel free to use this as inspiration for your own portfolio!
+Licensed under the MIT license.
 
-## Contact
+## Acknowledgments
 
-- **Website**: [samirsain.com](https://samirsain.com)
-- **GitHub**: [@samirsain](https://github.com/samirsain)
-- **Email**: devxmir@gmail.com
+- [React](https://react.dev)
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Radix UI](https://www.radix-ui.com)
+- [Motion](https://motion.dev)
+- [shadcn/ui](https://ui.shadcn.com)
+- [Aceternity UI](https://ui.aceternity.com)
+- [Kibo UI](https://www.kibo-ui.com)
+- [Lucide](https://lucide.dev)
+- [Fumadocs](https://fumadocs.dev)
+- [PostHog](https://posthog.com)
+- [c15t](https://c15t.com)
+- And many other open-source libraries used in `package.json`
 
 ---
 
-**Built with ❤️ by Samir Sain**
+**Built with ❤️ by [Samirsain](https://github.com/Samirsain)**

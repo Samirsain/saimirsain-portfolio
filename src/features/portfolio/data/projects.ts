@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
 - **Digital Growth**: SEO, automation services, and strategic marketing
 - Modern tech stack: Next.js 14, TypeScript, Tailwind CSS
 - Successfully serving global clients with 24/7 availability`,
-    logo: "/image.png",
+    logo: "https://sam4you.vercel.app/favicon.ico",
     isExpanded: true,
   },
   {

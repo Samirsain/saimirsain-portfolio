@@ -1,7 +1,7 @@
 
 
 
-import { SOURCE_CODE_GITHUB_URL, TWITTER_URL } from "@/config/site";
+import { SITE_INFO, SOURCE_CODE_GITHUB_URL, TWITTER_URL } from "@/config/site";
 
 
 

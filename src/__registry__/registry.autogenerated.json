@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "samirsain",
-  "homepage": "https://www.samirsain.com/components",
+  "name": "ncdai",
+  "homepage": "https://sam4you.vercel.app/components",
   "items": [
     {
       "name": "utils",
@@ -50,7 +50,7 @@
       "name": "theme-switcher",
       "type": "registry:component",
       "title": "Theme Switcher",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "description": "A theme switcher component for Next.js apps with next-themes and Tailwind CSS, supporting system, light, and dark modes.",
       "dependencies": [
         "next-themes",
@@ -58,7 +58,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "@samirsain/utils"
+        "@ncdai/utils"
       ],
       "files": [
         {
@@ -66,18 +66,18 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://samirsain.com/components/theme-switcher-component"
+      "docs": "https://chanhdai.com/components/theme-switcher-component"
     },
     {
       "name": "flip-sentences",
       "type": "registry:component",
       "title": "Flip Sentences",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "dependencies": [
         "motion"
       ],
       "registryDependencies": [
-        "@samirsain/utils"
+        "@ncdai/utils"
       ],
       "files": [
         {
@@ -90,13 +90,13 @@
       "name": "apple-hello-effect",
       "type": "registry:component",
       "title": "Apple Hello Effect",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "description": "Create a Xin chào and Hello writing effect inspired by Apple using Motion for React.",
       "dependencies": [
         "motion"
       ],
       "registryDependencies": [
-        "@samirsain/utils"
+        "@ncdai/utils"
       ],
       "files": [
         {
@@ -104,7 +104,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://samirsain.com/components/writing-effect-inspired-by-apple"
+      "docs": "https://chanhdai.com/components/writing-effect-inspired-by-apple"
     },
     {
       "name": "wheel-picker",
@@ -113,7 +113,7 @@
       "author": "Samirsain <devxmir@gmail.com>",
       "description": "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
       "dependencies": [
-        "@ncdai/react-wheel-picker"
+        "@samirsain/react-wheel-picker"
       ],
       "registryDependencies": [
         "@samirsain/utils"
@@ -124,7 +124,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://www.samirsain.com/components/react-wheel-picker"
+      "docs": "https://sam4you.vercel.app/components/react-wheel-picker"
     },
     {
       "name": "work-experience",
@@ -169,19 +169,19 @@
         "@import \"tw-animate-css\"": {},
         "@plugin @tailwindcss/typography": {}
       },
-      "docs": "https://samirsain.com/components/work-experience-component"
+      "docs": "https://chanhdai.com/components/work-experience-component"
     },
     {
       "name": "shimmering-text",
       "type": "registry:component",
       "title": "Shimmering Text",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "description": "Smooth shimmering text animation built with Motion.",
       "dependencies": [
         "motion"
       ],
       "registryDependencies": [
-        "@samirsain/utils"
+        "@ncdai/utils"
       ],
       "files": [
         {
@@ -194,14 +194,14 @@
       "name": "slide-to-unlock",
       "type": "registry:component",
       "title": "Slide to Unlock",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "description": "A sleek, interactive slider inspired by the classic iPhone OS 'slide to unlock' gesture.",
       "dependencies": [
         "motion"
       ],
       "registryDependencies": [
-        "@samirsain/utils",
-        "@samirsain/shimmering-text"
+        "@ncdai/utils",
+        "@ncdai/shimmering-text"
       ],
       "files": [
         {
@@ -209,16 +209,16 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://samirsain.com/components/slide-to-unlock"
+      "docs": "https://chanhdai.com/components/slide-to-unlock"
     },
     {
       "name": "testimonials-marquee",
       "type": "registry:component",
       "title": "Testimonials Marquee",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "description": "A testimonials marquee component for showcasing user feedback in a scrolling format.",
       "registryDependencies": [
-        "@samirsain/utils",
+        "@ncdai/utils",
         "@kibo-ui/marquee"
       ],
       "files": [
@@ -227,13 +227,13 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://samirsain.com/components/testimonials-marquee"
+      "docs": "https://chanhdai.com/components/testimonials-marquee"
     },
     {
       "name": "github-stars",
       "type": "registry:component",
       "title": "GitHub Stars",
-      "author": "samirsain <dai@samirsain.com>",
+      "author": "ncdai <dai@chanhdai.com>",
       "description": "Display GitHub repository star count with formatted numbers and a tooltip showing the full count.",
       "registryDependencies": [
         "button",
@@ -250,7 +250,7 @@
       "name": "wheel-picker-block-01",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/wheel-picker"
+        "@ncdai/wheel-picker"
       ],
       "files": [
         {
@@ -268,7 +268,7 @@
         "zod"
       ],
       "registryDependencies": [
-        "@samirsain/wheel-picker",
+        "@ncdai/wheel-picker",
         "form",
         "button",
         "sonner"
@@ -284,7 +284,7 @@
       "name": "work-experience-block-01",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/work-experience"
+        "@ncdai/work-experience"
       ],
       "files": [
         {
@@ -297,7 +297,7 @@
       "name": "shimmering-text-block-01",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/shimmering-text"
+        "@ncdai/shimmering-text"
       ],
       "files": [
         {
@@ -310,7 +310,7 @@
       "name": "shimmering-text-block-02",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/shimmering-text"
+        "@ncdai/shimmering-text"
       ],
       "files": [
         {
@@ -323,8 +323,8 @@
       "name": "slide-to-unlock-block-01",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/slide-to-unlock",
-        "@samirsain/use-sound"
+        "@ncdai/slide-to-unlock",
+        "@ncdai/use-sound"
       ],
       "files": [
         {
@@ -337,7 +337,7 @@
       "name": "slide-to-unlock-block-02",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/slide-to-unlock"
+        "@ncdai/slide-to-unlock"
       ],
       "files": [
         {
@@ -350,7 +350,7 @@
       "name": "slide-to-unlock-block-03",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/slide-to-unlock"
+        "@ncdai/slide-to-unlock"
       ],
       "files": [
         {
@@ -363,7 +363,7 @@
       "name": "testimonials-marquee-block-01",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/testimonials-marquee"
+        "@ncdai/testimonials-marquee"
       ],
       "files": [
         {
@@ -376,7 +376,7 @@
       "name": "testimonials-marquee-block-02",
       "type": "registry:block",
       "registryDependencies": [
-        "@samirsain/testimonials-marquee"
+        "@ncdai/testimonials-marquee"
       ],
       "files": [
         {
