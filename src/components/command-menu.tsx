@@ -3,12 +3,12 @@
 import { useCommandState } from "cmdk";
 import type { LucideProps } from "lucide-react";
 import {
+  BlocksIcon,
   BriefcaseBusinessIcon,
   CircleUserIcon,
   CornerDownLeftIcon,
   DownloadIcon,
   LetterTextIcon,
-  MessageCircleMoreIcon,
   MoonStarIcon,
   RssIcon,
   SunMediumIcon,
@@ -38,9 +38,9 @@ import { useSound } from "@/hooks/use-sound";
 import { trackEvent } from "@/lib/events";
 import { copyText } from "@/utils/copy";
 
-import { SamirsainMark, getMarkSVG } from "./samirsain-mark";
-import { getWordmarkSVG } from "./samirsain-wordmark";
 import { ComponentIcon, Icons } from "./icons";
+import { getMarkSVG, SamirsainMark } from "./samirsain-mark";
+import { getWordmarkSVG } from "./samirsain-wordmark";
 import { Button } from "./ui/button";
 import { Kbd, KbdGroup } from "./ui/kbd";
 import { Separator } from "./ui/separator";
@@ -261,6 +261,15 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             heading="Blog"
             links={blogLinks}
             fallbackIcon={TextIcon}
+            onLinkSelect={handleOpenLink}
+          />
+
+          <CommandSeparator />
+
+          <CommandLinkGroup
+            heading="Components"
+            links={componentLinks}
+            fallbackIcon={BlocksIcon}
             onLinkSelect={handleOpenLink}
           />
 

@@ -3,23 +3,12 @@ import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
-import type { WebSite, WithContext } from "schema-dts";
-
 
 import { Providers } from "@/components/providers";
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
-import { USER } from "@/features/portfolio/data/user";
 import { fontMono, fontSans } from "@/lib/fonts";
 
-function getWebSiteJsonLd(): WithContext<WebSite> {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: SITE_INFO.name,
-    url: SITE_INFO.url,
-    alternateName: [USER.username],
-  };
-}
+
 
 // Thanks @shadcn-ui, @tailwindcss
 const darkModeScript = String.raw`
